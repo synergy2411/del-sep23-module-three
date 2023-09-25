@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CDN - CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      .my-border {
+        padding: 12px;
+        border: 1px red solid;
+      }
+
+      /* Block
+      .products {
+
+      }
+
+      /* Element */
+      .products__iPhone{
+
+      }
+
+      /* Modifier */
+      .products--titanium{
+
+      }
+
+      .blog{
+        /* common to all */
+          border: 1px red solid;
+      }
+      .blog.blog__books {
+        /* Specific to the element */
+      }
+
+      .blog.blog--background{
+        background-color: #333;
+      } */
+
+    </style>
+  </head>
+  <body>
+
+
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">
+  Toggle static offcanvas
+  </button>
+  
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="Id2" aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+    I will not close if you click outside of me.
+    </div>
+  </div>
+  </div>
+
+
+  <nav aria-label="Page navigation">
+    <ul class="pagination    ">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+    
+    <header>
+      <nav>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-decoration-none">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="active nav-link text-decoration-none">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <section>
+      <article class="blog blog__books blog--background"></article>
+      <article class="blog blog__author"></article>
+      <article class="blog blog__reviews blog--background"></article>
+    </section>
+
+    <div class="container mb-5">
+      <div class="alert alert-danger">
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div class="alert alert-warning">
+        Lorem ipsum dolor sit amet.
+      </div>
+      <div class="alert alert-primary">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+
+
+    <div class="container mb-4">
+      <div class="btn-group">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-dark">Dark</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-danger">Danger</button>
+    </div>
+    </div>
+
+
+
+
+    <div class="container">
+
+    <table class="table table-hover table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Contact</th>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            John
+          </td>
+          <td>
+            987654321
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td>
+            Jenny
+          </td>
+          <td>
+            875432098
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+    <h1>text</h1>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="float-start" style="border: 1px red solid">
+            <img
+              src="./image/random.jfif"
+              class="img-fluid img-thumbnail rounded-circle"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="text-decoration-underline">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, doloribus?
+        <br />
+      </p>
+      <a class="text-decoration-none" href="">Home</a>
+    </div>
+
+    <div class="container">
+      <p class="display-6">Lorem ipsum dolor sit.</p>
+      <p class="display-5">Lorem ipsum dolor sit.</p>
+      <p class="display-4">Lorem ipsum dolor sit.</p>
+      <p class="display-3">Lorem ipsum dolor sit.</p>
+      <p class="display-2">Lorem ipsum dolor sit.</p>
+      <p class="display-1">Lorem ipsum dolor sit.</p>
+    </div>
+
+    <div class="row mb-4">
+      <div
+        class="offset-sm-2 offset-md-0 offset-lg-0 col-lg-4 col-md-6 col-sm-8 my-border"
+      >
+        col-lg-4 col-md-6 col-sm-8 offset-sm-2
+      </div>
+      <div class="col-lg-8 col-md-6 my-border">Col - 8</div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 my-border">Col - 6</div>
+      <div class="col-6 my-border">Col - 6</div>
+      <div class="col-1 my-border">Col - 1</div>
+    </div>
+
+    <div class="row">
+      <div class="col-4 my-border offset-4">Col - 4</div>
+    </div>
+    <div class="row">
+      <div class="col-6 my-border offset-3">Col - 6</div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="col-1 my-border p-4 m-6">Col - 1</div>
+      <div class="col-1 my-border">Col - 2</div>
+      <div class="col-1 my-border">Col - 3</div>
+      <div class="col-1 my-border">Col - 4</div>
+      <div class="col-1 my-border">Col - 5</div>
+      <div class="col-1 my-border">Col - 6</div>
+      <div class="col-1 my-border">Col - 7</div>
+      <div class="col-1 my-border">Col - 8</div>
+      <div class="col-1 my-border">Col - 9</div>
+      <div class="col-1 my-border">Col - 10</div>
+      <div class="col-1 my-border">Col - 11</div>
+      <div class="col-1 my-border">Col - 12</div>
+      <div class="col-1 my-border">Col - 13</div>
+      <div class="col-1 my-border">Col - 14</div>
+    </div> -->
+
+    <hr />
+    <div class="container">
+      <h1>Container only</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+        numquam cum a eligendi debitis ex, optio quae eveniet earum ipsam
+        libero? Et aliquid alias modi. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Officiis quas aperiam cupiditate aut maiores unde
+        natus ullam aspernatur quis mollitia?
+      </p>
+    </div>
+
+    <div class="container-md">
+      <h1>Container with breakpoint</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+        numquam cum a eligendi debitis ex, optio quae eveniet earum ipsam
+        libero? Et aliquid alias modi. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Officiis quas aperiam cupiditate aut maiores unde
+        natus ullam aspernatur quis mollitia?
+      </p>
+    </div>
+
+    <div class="container-fluid">
+      <h1>Container Fluid</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+        numquam cum a eligendi debitis ex, optio quae eveniet earum ipsam
+        libero? Et aliquid alias modi. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Officiis quas aperiam cupiditate aut maiores unde
+        natus ullam aspernatur quis mollitia?
+      </p>
+    </div>
+
+    <!-- Bootstrap CDN - JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>
