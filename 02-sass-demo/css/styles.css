@@ -6,13 +6,13 @@
 
 body {
   background: #444;
-  width: 80%;
+  width: 800px;
   margin: 0 auto;
 }
 
 .light {
   background-color: #fff;
-  color: #444;
+  color: #543;
 }
 
 .main {
@@ -40,41 +40,41 @@ body {
 }
 
 .box-1 {
-  background-color: #f2f2f2;
-}
-
-.box-2 {
   background-color: #e6e6e6;
 }
 
-.box-3 {
-  background-color: #d9d9d9;
-}
-
-.box-4 {
+.box-2 {
   background-color: #cccccc;
 }
 
-.box-5 {
-  background-color: #bfbfbf;
-}
-
-.box-6 {
+.box-3 {
   background-color: #b3b3b3;
 }
 
-.box-7 {
-  background-color: #a6a6a6;
-}
-
-.box-8 {
+.box-4 {
   background-color: #999999;
 }
 
+.box-5 {
+  background-color: gray;
+}
+
+.box-6 {
+  background-color: #666666;
+}
+
+.box-7 {
+  background-color: #4d4d4d;
+}
+
+.box-8 {
+  background-color: #333333;
+}
+
 .box-9 {
-  background-color: #8c8c8c;
+  background-color: #1a1a1a;
 }
 
 .box-10 {
-  background-color: gray;
+  background-color: black;
 }

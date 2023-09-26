@@ -1,5 +1,8 @@
+@use "./base";
+@use "sass:math";
 @import "./resets";
 @import "./variables";
+
 
 
 @mixin flexCenter($direction : row){
@@ -16,13 +19,18 @@
         color: $text-color;
     }@else {
         background-color: #fff;
-        color: #444;
+        color: base.$base-color;
     }
+}
+
+@function givenWidth($total-width){
+    @return $total-width * (80 / 100);
 }
 
 body {
     background : $primary-color;
-    width: 80%;
+    // width: 30% * math.$pi;
+    width: givenWidth(1000px);
     margin: 0 auto;
 }
 
@@ -58,6 +66,6 @@ body {
 @for $i from 1 through 10 {
     .box-#{$i}{
         // background-color: lighten($color: red, $amount: 5% * $i);
-        background-color: darken($color: #fff, $amount: 5% * $i);
+        background-color: darken($color: #ffffff, $amount: 10% * $i);
     }
 }

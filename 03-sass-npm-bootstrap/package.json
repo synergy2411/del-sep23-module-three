@@ -1,0 +1,16 @@
+{
+  "name": "03-sass-npm-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:compile": "sass --watch sass/styles.scss css/styles.css"
+  },
+  "keywords": [],
+  "author": "SK",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "sass": "^1.68.0"
+  }
+}
