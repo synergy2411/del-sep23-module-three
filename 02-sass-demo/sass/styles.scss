@@ -1,0 +1,63 @@
+@import "./resets";
+@import "./variables";
+
+
+@mixin flexCenter($direction : row){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+
+@mixin theme($dark-theme : true){
+    @if $dark-theme {
+        background-color: $primary-color;
+        color: $text-color;
+    }@else {
+        background-color: #fff;
+        color: #444;
+    }
+}
+
+body {
+    background : $primary-color;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.light{
+    @include theme(false)
+}
+
+
+.main {
+    @include flexCenter(column);
+    font-weight: map-get($font-weight, regular );
+    #{&}__paragraph1{
+        font-size: 1.2rem;
+        &:hover{
+            color: $accent-color;
+        }
+    }
+    #{&}__paragraph2{
+        @extend .main__paragraph1;
+        &:hover{
+            color: #45ff45;
+        }
+    }
+}
+
+.box{
+    width: 80px;
+    height: 50px;
+    border: 1px grey solid;
+    display: inline-block;
+}
+
+@for $i from 1 through 10 {
+    .box-#{$i}{
+        // background-color: lighten($color: red, $amount: 5% * $i);
+        background-color: darken($color: #fff, $amount: 5% * $i);
+    }
+}
